@@ -1,18 +1,22 @@
 # qtBall Project
 
-This project implements a simple Qt6 application that creates a window with two moving balls. The balls will change their direction upon colliding with each other.
+This project implements a Qt6 application that creates a window with 8 moving balls of different colors, sizes, and velocities. The balls bounce off the window boundaries and collide with each other with realistic physics simulation.
 
 ## Project Structure
 
 ```
 qtBall
-├── src
-│   ├── main.cpp          # Entry point of the application
+├── include/
 │   ├── ball.h           # Definition of the Ball class
+│   └── ballwindow.h     # Definition of the BallWindow class
+├── source/
+│   ├── main.cpp         # Entry point of the application
 │   ├── ball.cpp         # Implementation of the Ball class methods
-│   ├── ballwindow.h     # Definition of the BallWindow class
-│   ├── ballwindow.cpp   # Implementation of the BallWindow class methods
-└── README.md            # Project documentation
+│   └── ballwindow.cpp   # Implementation of the BallWindow class methods
+├── build/               # Build directory (generated, ignored by git)
+├── CMakeLists.txt       # CMake configuration file
+├── .gitignore          # Git ignore file
+└── README.md           # Project documentation
 ```
 
 ## Building the Application
@@ -50,8 +54,19 @@ After building the project, you can run the application using the following comm
 
 ## Features
 
-- Two balls that move around the window.
-- Collision detection that inverts the velocity of the balls upon collision.
+- 8 balls with different colors (red, blue, green, magenta, cyan, yellow, gray, dark red)
+- Each ball has different size, position, and velocity
+- Realistic collision detection between balls with proper physics simulation
+- Boundary collision detection - balls bounce off window edges
+- Smooth animation at approximately 60 FPS
+- Keyboard controls: Press 'Escape' or 'Q' to quit the application
+- Anti-aliased rendering for smooth graphics
+
+## Requirements
+
+- Qt6 (QtWidgets module)
+- CMake 3.16 or higher
+- C++17 compatible compiler
 
 ## License
 
