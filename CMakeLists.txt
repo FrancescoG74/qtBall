@@ -7,12 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_executable(qtBall
-    src/main.cpp
-    src/ball.cpp
-    src/ball.h
-    src/ballwindow.cpp
-    src/ballwindow.h
+    source/main.cpp
+    source/ball.cpp
+    include/ball.h
+    source/ballwindow.cpp
+    include/ballwindow.h
 )
+
+target_include_directories(qtBall PRIVATE include)
 
 target_link_libraries(qtBall PRIVATE Qt6::Widgets)
 

@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "ballwindow.h"
+#include "../include/ballwindow.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);

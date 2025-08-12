@@ -1,0 +1,49 @@
+# Build directories
+build/
+Build/
+build-*/
+
+# Qt MOC files
+moc_*.cpp
+moc_*.h
+*.moc
+
+# Qt UI files
+ui_*.h
+
+# Qt Resource files
+qrc_*.cpp
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# IDE files
+.vscode/
+.idea/
+*.pro.user
+*.pro.user.*
+
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+qtBall
+
+# Debug files
+*.pdb
+
+# Temporary files
+*~
+*.tmp
+*.temp
+
+# OS specific files
+.DS_Store
+Thumbs.db

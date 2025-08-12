@@ -1,10 +1,11 @@
-#include "ballwindow.h"
-#include "ball.h"
+#include "../include/ballwindow.h"
+#include "../include/ball.h"
 #include <QTimer>
 #include <QPainter>
 #include <QResizeEvent>
 #include <QKeyEvent>
 #include <QColor>
+#include <QApplication>
 
 BallWindow::BallWindow(QWidget *parent)
     : QWidget(parent), timer(new QTimer(this))

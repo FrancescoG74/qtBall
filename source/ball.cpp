@@ -1,4 +1,4 @@
-#include "ball.h"
+#include "../include/ball.h"
 #include <QtMath>
 #include <QVector2D>
 
